@@ -8,14 +8,23 @@ namespace cSharpAssignment.Question2
 {
     public static class questionIV
     {
+
+        /// <summary>
+        /// Write a program and ask the user to enter a number. The number should be between 1 to 10. If the user enters a valid number, display "Valid" on the console. Otherwise, display "Invalid".
+        /// </summary>
         public static void IV()
         {
+
+            //// Ask the user to enter a number
 
             Random random = new Random();
             int secretNumber = random.Next(1, 11);
 
+            //// Display the secret number for verification
             Console.WriteLine($"Secret number (for verification): {secretNumber}");
 
+
+            //// Ask the user to guess the secret number
             bool hasWon = false;
             for (int attempt = 1; attempt <= 4; attempt++)
             {
@@ -33,6 +42,8 @@ namespace cSharpAssignment.Question2
                 }
             }
 
+
+            //// Output the result
             if (hasWon)
             {
                 Console.WriteLine("You won!");

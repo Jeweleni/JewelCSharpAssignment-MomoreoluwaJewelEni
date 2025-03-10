@@ -24,10 +24,12 @@ namespace Calculator_Library
                 Console.WriteLine("5. Exit");
                 Console.Write("Choose an operation (1-5): ");
 
+
+                //// Get the user's choice
                 int choice = Convert.ToInt32(Console.ReadLine());
 
 
-               
+                //// Exit the calculator
                 if (choice == 5)
                 {
                     Console.WriteLine("Exiting the calculator. Goodbye!");
@@ -40,6 +42,8 @@ namespace Calculator_Library
                     continue;
                 }
 
+
+                //// Ask the user to enter two numbers
                 Console.Write("Enter the first number: ");
                 double num1 = Convert.ToDouble(Console.ReadLine());
 

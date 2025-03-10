@@ -8,9 +8,21 @@ namespace DbConnectionObject
 {
     public abstract class DbConnection
     {
+        /// <summary>
+        /// Gets the connection string.     
+        /// </summary>
         public string ConnectionString { get; }
+
+        /// <summary>
+        /// sets the timeout.
+        /// </summary>
         public TimeSpan Timeout { get; set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DbConnection"/> class.
+        /// </summary>
+        /// <param name="connectionString"></param>
+        /// <exception cref="InvalidOperationException"></exception>
         public DbConnection(string connectionString)
         {
             if (string.IsNullOrWhiteSpace(connectionString))

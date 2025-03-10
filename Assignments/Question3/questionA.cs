@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,18 @@ namespace cSharpAssignment.Question3
 {
     public static class questionA
     {
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static void A()
         {
+
+            //// Ask the user to enter a few names separated by a comma
             List<string> names = new List<string>();
 
+
+            //// Validate input
             while (true)
             {
                 Console.Write("Enter a name (or press Enter to finish): ");
@@ -23,9 +32,14 @@ namespace cSharpAssignment.Question3
                 names.Add(name);
             }
 
-            int count = names.Count;
+            //// Output the result
 
-            if (count == 1)
+            int count = names.Count;
+            if (count == 0)
+            {
+                Console.WriteLine("No one likes your post.");
+            }
+            else if (count == 1)
             {
                 Console.WriteLine($"{names[0]} likes your post.");
             }
@@ -38,6 +52,5 @@ namespace cSharpAssignment.Question3
                 Console.WriteLine($"{names[0]}, {names[1]} and {count - 2} others like your post.");
             }
         }
-
     }
 }

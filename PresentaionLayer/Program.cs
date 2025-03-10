@@ -18,19 +18,20 @@ namespace cSharpAssignment
         {
 
 
-
             //QUESTION 1
             //questionOne.One();
             //questionTwo.Two();
             //questionThree.Three();
             //questionFour.Four();
 
-            // QUESTION 2
-            // questionI.I();
+
+            //QUESTION 2
+            //questionI.I();
             //questionII.II();
             //questionIII.III();
             //questionIV.IV();
             //questionV.V();
+
 
             //QUESTION 3
             // questionA.A();
@@ -38,6 +39,7 @@ namespace cSharpAssignment
             //questionC.C();
             //questionD.D();
             //questionE.E();
+
 
             //QUESTION 4
             //questionFourOne.FourOne();
@@ -47,20 +49,21 @@ namespace cSharpAssignment
             //questionFourFive.FourFive();
 
 
+
             //QUESTION 5
             //questionFive.CountWordsInFile();
             //questionFive.FindLongestWordInFile();
 
 
+
             //AreaOfCirlcle.AreaOfCirclefunc();
 
-           Calculator.CalculatorStuff();
+            //Calculator.CalculatorStuff();
 
 
 
-            ////////DbConnectionsObject
+            ////DBCONNECTION
            
-
             //// Using SqlConnection
             //var sqlConnection = new SqlConnection("Server=myServer;Database=myDB;");
             //var sqlCommand = new DbCommand(sqlConnection, "SELECT * FROM Users");
@@ -75,7 +78,9 @@ namespace cSharpAssignment
 
 
 
-            ////StackDesign
+
+
+            ////STACKDESIGN
             //IStack stack = new StackDesign.Stack();
 
             //stack.Push(1);
@@ -85,7 +90,6 @@ namespace cSharpAssignment
             ////Console.WriteLine(stack.Pop()); // 3
             ////Console.WriteLine(stack.Pop()); // 2
             ////Console.WriteLine(stack.Pop()); // 1
-
             //stack.DisplayArray();
 
 

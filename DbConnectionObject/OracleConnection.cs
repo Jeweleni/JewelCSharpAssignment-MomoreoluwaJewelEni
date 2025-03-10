@@ -8,8 +8,17 @@ namespace DbConnectionObject
 {
     public class OracleConnection : DbConnection
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OracleConnection"/> class.
+        /// </summary>
+        /// <param name="connectionString"></param>
         public OracleConnection(string connectionString) : base(connectionString) { }
 
+
+
+        /// <summary>
+        /// Opens the connection.
+        /// </summary>
         public override void Open()
         {
             Console.WriteLine("Opening Oracle connection...");

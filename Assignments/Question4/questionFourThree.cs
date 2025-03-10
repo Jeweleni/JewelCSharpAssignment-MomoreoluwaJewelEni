@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace cSharpAssignment.Question4
 {
+
+
     public static class questionFourThree
     {
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static void FourThree()
         {
+           
             Console.Write("Enter a time in 24-hour format (HH:mm): ");
             string input = Console.ReadLine();
+
+            //// Validate input
 
             if (string.IsNullOrWhiteSpace(input) || !IsValidTime(input))
             {
@@ -23,6 +32,11 @@ namespace cSharpAssignment.Question4
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="time"></param>
+        /// <returns></returns>
         static bool IsValidTime(string time)
         {
             string[] parts = time.Split(':');
