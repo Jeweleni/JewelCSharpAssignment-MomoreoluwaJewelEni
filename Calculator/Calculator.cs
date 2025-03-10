@@ -1,9 +1,19 @@
-﻿namespace Calculator
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Common;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace Calculator_Library
 {
     public static class Calculator
     {
         public static void CalculatorStuff()
         {
+
+            
             while (true)
             {
                 Console.WriteLine("Simple Calculator");
@@ -16,6 +26,8 @@
 
                 int choice = Convert.ToInt32(Console.ReadLine());
 
+
+               
                 if (choice == 5)
                 {
                     Console.WriteLine("Exiting the calculator. Goodbye!");
@@ -36,6 +48,9 @@
 
                 double result = 0;
 
+
+                //// Perform the operation
+                ///
                 switch (choice)
                 {
                     case 1: // Addition

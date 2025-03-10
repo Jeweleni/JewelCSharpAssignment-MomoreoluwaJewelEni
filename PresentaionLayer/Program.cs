@@ -1,29 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-
-// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-
-
-using cSharpAssignment.Question1;
+﻿using cSharpAssignment.Question1;
 using cSharpAssignment.Question2;
 using cSharpAssignment.Question3;
 using cSharpAssignment.Question4;
 using cSharpAssignment.Question_5;
-
-
-
-
-using Calculator;
 using System;
 using System.Collections;
 using DbConnectionObject;
 using StackDesign;
+using Calculator_Library;
 
 
 namespace cSharpAssignment
 {
-    class Assignment
+    public class Assignment
     {
         static void Main(string[] args)
         {
@@ -65,17 +54,12 @@ namespace cSharpAssignment
 
             //AreaOfCirlcle.AreaOfCirclefunc();
 
-            //Calculator.CalculatorStuff();
+           Calculator.CalculatorStuff();
 
 
 
-            //DbConnectionsObject
-            //DbConnectionObject.DbConnection dbConnection = new DbConnectionObject.DbConnection("SQLConnection");
-            //DbConnectionObject.DbCommand dbCommand = new DbConnectionObject.DbCommand(dbConnection, "SELECT * FROM TABLE");
-            //dbCommand.Execute();
-
-
-            //
+            ////////DbConnectionsObject
+           
 
             //// Using SqlConnection
             //var sqlConnection = new SqlConnection("Server=myServer;Database=myDB;");

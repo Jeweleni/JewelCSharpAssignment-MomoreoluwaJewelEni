@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -10,8 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Assignments\Assignments.csproj" />
     <ProjectReference Include="..\AssignmentTwo\StackDesign.csproj" />
-    <ProjectReference Include="..\Calculator\Calculator.csproj" />
-    <ProjectReference Include="..\Calculator\Calculator_Library.csproj" />
     <ProjectReference Include="..\DbConnectionObject\DbConnectionObject.csproj" />
   </ItemGroup>
 
